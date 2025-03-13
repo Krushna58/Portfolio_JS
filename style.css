@@ -1,0 +1,344 @@
+:root {
+  --text-color: black;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+}
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+nav .right a:last-child {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+nav .right a span {
+  margin-left: 5px;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin: 50px 0;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+.hero-section .text .links {
+  margin-top: 25px;
+}
+
+
+
+
+
+.hero-section .text {
+  flex: 5;
+}
+.hero-section .text h2 {
+  font-size: 45px;
+}
+.hero-section .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 7px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: 0.1s;
+}
+.hero-section .text .links a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+.hero-section .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+.hero-section .headshot img {
+  border-radius: 50%;
+  width: 350px;
+}
+/* section 2: skills */
+.skills-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.skills-section h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.skills-section text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 20px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  margin: 10px;
+  gap: 10px;
+}
+
+.skills-section .cells .cell img {
+  width: 60px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+  font-size: 18px;
+}
+
+/* section 3 : Projects*/
+.Projects-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.Projects-section h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.Projects-section .group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.Projects-section .group .person-details {
+  text-align: center;
+  flex: 2;
+}
+.Projects-section .group text {
+  flex: 8;
+  
+}
+.Projects-section .group .person-details img {
+  aspect-ratio: 1/1;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.Projects-section .group .person-details p {
+  font-weight: 600;
+}
+.Projects-section .group .person-details p:last-child {
+  font-weight: normal;
+}
+.Projects-section .group .text ul{
+  list-style: none;
+  
+}
+.Projects-section .group .text li{
+  padding: 10px;
+}
+
+/* section 4: contact */
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+}
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+.contact-section .group .text {
+  flex: 3;
+  margin-top: 20px;
+}
+.contact-section .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+.contact-section .group form input,
+.contact-section .group form textarea {
+  font-family: "Poppins", sans-serif;
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+/* .contact-section .group form button {
+  font-size: 16px;
+  font-family: "poppins", sans-serif;
+  color: #fff;
+  background-color: var(--link-color);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: 1s;
+} */
+
+.contact-section .group form button:hover {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 850px) {
+  /* section 1: Hero  */
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .hero-section .headshot img {
+    align-items: left;
+  }
+}
+
+@media (max-width: 740px) {
+  /* section 1: Hero  */
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .hero-section .headshot img {
+    width: 300px;
+  }
+
+  /* Section Projects */
+  .Projects-section {
+    text-align: center;
+  }
+  .Projects-section .group {
+    flex-direction: column;
+  }
+
+  /* Section 4: contact */
+  .contact-section .group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  /* navbar */
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 31px;
+  }
+  nav .right a:last-child {
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 0;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  /* section 1 : hero */
+  .hero-section {
+    padding: 0 20px;
+  }
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+
+  /* section 2: skills */
+  .skills-section {
+    padding: 8 20px;
+  }
+
+  /*  Section 3: Projects */
+  .Projects-section {
+    padding: 0 20px;
+  }
+  .Projects-section h2 {
+    text-align: center;
+  }
+  .Projects-section .group {
+    flex-direction: column;
+  }
+
+  /* Section 4: contact */
+  .contact-section {
+    padding: 0 20px;
+  }
+}
+
+/* Additonal modification body-bacground */
+.button-33 {
+  background-color: #8385d4;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: rgb(44, 22, 145);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
