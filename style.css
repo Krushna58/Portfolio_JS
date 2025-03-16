@@ -294,7 +294,7 @@ nav .right a span {
 /* _______________________skills: class-(class="hover-underline")________________________________ */
 
 .hover-underline {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   color: #100000;
   position: relative;
   background-color: #bfefef;
