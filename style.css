@@ -457,6 +457,14 @@ nav .right a span {
 }
 
 @media (max-width: 600px) {
+  
+nav .left{
+ 
+  display: contents;
+  
+
+}
+
   /* navbar */
   nav {
     padding: 0 20px;
