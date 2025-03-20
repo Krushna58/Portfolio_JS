@@ -19,6 +19,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   background: #f1f1ef;
+  /* background: #212534; */      
 }
 
 a {
@@ -297,7 +298,7 @@ nav .right a span {
   /* font-size: 2rem; */
   color: #100000;
   position: relative;
-  background-color: #bfefef;
+  /* background-color: #bfefef; */
 }
 
 .hover-underline::after,
@@ -371,6 +372,11 @@ nav .right a span {
 .Projects-section .group .text li{
   padding: 10px;
 }
+/* ________________________________________________Project card___________________________________ */
+
+
+
+/* ---------------------------------------------end------------------------------------------------ */
 
 /* section 4: contact */
 .contact-section {
